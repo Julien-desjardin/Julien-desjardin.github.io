@@ -65,7 +65,7 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 27px;
-    background: #FF4820;
+    background: #BF7300;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     cursor: pointer;
@@ -105,6 +105,8 @@
 .canvas{
     width: 180vh;
     height: 80vh;
+    position: absolute;
+    margin: 1rem 1rem;
 }
 @media screen and (max-width: 1850px) {
     .portfolio__header{

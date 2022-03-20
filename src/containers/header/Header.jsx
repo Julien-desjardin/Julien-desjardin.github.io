@@ -3,13 +3,29 @@ import './header.css';
 // import ai from '../../assets/ai.png';
 import { Canvas } from '@react-three/fiber';
 import Space from '../../components/Space/Space';
-import {OrbitControls} from '@react-three/drei';
+import {OrbitControls, TransformControls} from '@react-three/drei';
 import { MaxEquation } from 'three';
 
 const Header = () => {
   return (
     
     <div className='portfolio__header section__padding' id='home'>
+      <div className='portfolio__header-image'>
+          <div className='canvas' >
+            <Canvas camera={{zoom: 4, position: [15,20,15]}}>
+              <ambientLight intensity={0.5}/>
+              <pointLight position={[35, 35, 0]} intensity={0.4}/>
+              <pointLight position={[-35, 35, 0]} intensity={0.4}/>
+              
+              <Suspense fallback={null}>
+                <Space />
+                </Suspense>
+                
+                <OrbitControls minDistance={6} maxDistance={8} autoRotate autoRotateSpeed={7}/>
+                
+                 </Canvas>
+                 </div>
+                 </div>
       <div className='portfolio__header-content'>
         <h1 className='gradient__text'>Welcome to the portfolio of Julien Desjardin</h1>
         <p>to receive my CV, thank youi to enter your email address below, in some minutes, you'll gonna receive my cv by email.</p>
@@ -20,23 +36,11 @@ const Header = () => {
         </div>
 
         <div className='portfolio__header-content__people'>
-          <p>1500 people requested my CV last 24 hours</p>
+          <p>150 people requested my CV last 24 hours</p>
         </div>
         
    
-        <div className='portfolio__header-image'>
-          <div className='canvas' >
-            <Canvas camera={{zoom: 4, position: [15,20,15]}}>
-              <ambientLight intensity={0.5}/>
-              <pointLight position={[35, 35, 0]} intensity={0.4}/>
-              <pointLight position={[-35, 35, 0]} intensity={0.4}/>
-              <Suspense fallback={null}>
-                <Space />
-                </Suspense>
-                <OrbitControls minDistance={6} maxDistance={7}/>
-                 </Canvas>
-                 </div>
-                 </div>
+        
        
       </div>
     </div>
