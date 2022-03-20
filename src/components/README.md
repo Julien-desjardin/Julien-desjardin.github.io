@@ -6,6 +6,6 @@ I invit you to check my Github to follow the devlopment of this portfolio.
 
 ### Social networks :
 
-Here my linkedin : [https://www.linkedin.com/in/julien-desjardin/](Linkedin)
-Here the Github of the project : [https://github.com/Julien-desjardin/Julien-desjardin.github.io](Project)
-Here my Github : [https://github.com/Julien-desjardin](Github)
+Here my linkedin : [Linkedin](https://www.linkedin.com/in/julien-desjardin/)
+Here the Github of the project : [Project](https://github.com/Julien-desjardin/Julien-desjardin.github.io)
+Here my Github : [Github](https://github.com/Julien-desjardin)
