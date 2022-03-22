@@ -114,6 +114,7 @@
     min-width: 500px;
     max-width: 500px;
     margin: 0rem 2rem;
+    z-index: 0;
 }
 
 
