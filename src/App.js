@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {Footer, Blog, Possibility, Features, WhatPortfolio, Header} from './containers';
-import {CTA, Brand, Navbar} from './components';
+import {CTA, Brand, Navbar, Feature} from './components';
 import './App.css';
 
 const App = () => {
@@ -10,14 +10,15 @@ const App = () => {
         <div className='gradient__bg'>
           <Navbar />
           <Header />
+          <Feature />
         </div>
-        <Brand />
+        {/* <Brand />
         <WhatPortfolio />
         <Features />
         <Possibility />
         <CTA />
         <Blog />
-        <Footer />
+        <Footer /> */}
         </div>
   )
 }
